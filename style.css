@@ -196,7 +196,7 @@ a {
 
 .coloritem-2 {
     background: rgb(228,120,81);
-background: linear-gradient(0deg, rgba(228,120,81,1) 0%, rgba(249,197,114,1) 100%);
+    background: linear-gradient(0deg, rgba(228,120,81,1) 0%, rgba(249,197,114,1) 100%);
 }
 
 .my-cart-items-name .fa-file-lines {
@@ -247,6 +247,10 @@ background: linear-gradient(0deg, rgba(228,120,81,1) 0%, rgba(249,197,114,1) 100
 }
 
 .my-cart-select .fa-circle:first-child {
+    color: cadetblue;
+}
+
+.item-2 .fa-circle:first-child, .item-2 .fa-circle:nth-child(2), .item-2 .fa-circle:nth-child(3) {
     color: cadetblue;
 }
 
