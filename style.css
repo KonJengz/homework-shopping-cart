@@ -350,3 +350,7 @@ a {
     border-radius: 10px;
     cursor: pointer;
 }
+
+.my-cart-right .login-checkout:hover {
+    background-color: rgb(107, 177, 178);
+}
