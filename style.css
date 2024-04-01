@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: #eee;
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-nav {
+    border-bottom: 1px solid #dcdcdc;
+    margin-top: 20px;
+}
+
+.container-nav .container {
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.container .navbar {
+    display: flex;
+    height: 55px;
+    align-items: center;
+}
+
+.nav-left {
+    align-items: center;
+    gap: 18px;
+    color: 333132;
+    flex-basis: 280px;
+    cursor: pointer;
+}
+
+.nav-left img {
+    height: 100%;
+}
+
+.nav-left span {
+    font-weight: normal;
+}
+
+.nav-center {
+    gap: 25px;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-center a, .nav-right a {
+    font-weight: bold;
+    padding: 1px;
+    border-bottom: 2px solid #eee;
+}
+
+.nav-center a:hover, .nav-right a:hover,.fa-magnifying-glass:hover, .fa-cart-shopping:hover {
+    border-bottom: 2px solid cadetblue;
+    color: cadetblue;
+}
+
+.nav-right {
+    gap: 20px;
+    flex-basis: 280px;
+    justify-content: flex-end;
+}
+
+.fa-cart-shopping, .fa-magnifying-glass {
+    font-size: 20px;
+    cursor: pointer;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #eee;
+    position: relative;
+}
+
+.fa-cart-shopping::after {
+    content: "2";
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 17px;
+    height: 17px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+}
+
+.container-my-cart {
+    display: flex;
+    gap: 20px;
+    width: 960px;
+}
+
+.my-cart {
+    margin: 50px 0;
+}
+
+.my-cart h1 {
+    margin-bottom: 25px;
+}
+
+.my-cart-left {
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+.my-cart-left .my-cart-items {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    background-color: #f6f6f6;
+    border: 1px solid #dcdcdc;
+    padding: 25px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.my-cart-right {
+    flex-direction: column;
+    display: flex;
+    background-color: #f6f6f6;
+    border: 1px solid #dcdcdc;
+    padding: 25px;
+    border-radius: 25px;
+    flex: 1;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    height: 100%;
+ } 
+
+.my-cart-items:hover, .my-cart-right:hover {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.my-cart-left .my-cart-items .bin {
+    border: 1px solid cadetblue;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.my-cart-left .bin .fa-trash-can {
+    color: cadetblue;
+    transition: all 0.3s;
+}
+
+.my-cart-items .bin:hover .fa-trash-can {
+    font-size: 20px;
+}
+
+.my-cart-items-name {
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 25px;
+    color: #f6f6f6;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.coloritem-1 {
+    background: rgb(65,125,198);
+    background: linear-gradient(0deg, rgba(65,125,198,1) 0%, rgba(126,186,248,1) 100%);
+}
+
+.coloritem-2 {
+    background: rgb(228,120,81);
+background: linear-gradient(0deg, rgba(228,120,81,1) 0%, rgba(249,197,114,1) 100%);
+}
+
+.my-cart-items-name .fa-file-lines {
+    background-color: #f6f6f6;
+    width: 45px;
+    height: 45px;
+    color: rgb(65,125,198);
+    color: rgb(65,125,198);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.my-cart-items-name h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.my-cart-items-name small {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+.my-cart-items-deltail h2 {
+    font-weight: 400;
+    color: #444;
+    font-size: 20px;
+}
+
+.my-cart-select {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.my-cart-select .fa-circle {
+    color: #d9d9d9;
+    cursor: pointer;
+}
+
+.fa-circle:hover {
+    color: cadetblue;
+}
+
+.my-cart-select .fa-circle:first-child {
+    color: cadetblue;
+}
+
+.my-cart-select select {
+    outline: none;
+    
+}
+
+.my-cart-select select:focus {
+    outline: 2px solid cadetblue;
+    border-radius: 10px;
+}
+
+.my-cart-items-deltail p {
+    color: #444;
+}
+
+
+.my-cart-right .subtotal {
+    display: flex;
+    justify-content: space-between;
+    color: #444;
+    margin-top: 20px;
+}
+
+.my-cart-right .subtotal p:first-child {
+    color: #bebebe;
+}
+
+.promotiob-code {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: flex-start;
+    border-bottom: 1px solid #d9d9d9;
+    align-items: center;
+}
+
+.promotiob-code i {
+    flex-basis: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: cadetblue;
+    font-size: 20px;
+}
+
+.promotiob-code form{
+    width: 100%;
+    display: flex;
+    gap: 12px;
+}
+
+.promotiob-code input[type=text] {
+    height: 40px;
+    flex: 2;
+    padding: 12px;
+    background-color: #f6f6f6;
+    border-radius: 12px;
+    border: 1px solid #c6c6c6;
+    font-size: 14px;
+    outline: none;
+}
+
+.promotiob-code button {
+    flex: 1;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    border: 1px solid cadetblue;
+    cursor: pointer;
+    color: cadetblue;
+    font-size: 16px;
+}
+
+.total-payment {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+.total-payment p {
+    color: #444;
+}
+
+.total-payment h2 {
+    color: cadetblue;
+}
+
+.my-cart-right .login-checkout{
+    height: 40px;
+    width: 100%;
+    background-color: cadetblue;
+    color: #444;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
